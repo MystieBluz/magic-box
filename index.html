@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Magic Box!</title>
+    
+</head>
+<body>
+
+    <p>Press the buttons to change the box!</p>
+
+    <div id="box" style="height:150px; width:150px; background-color:orange; margin:25px"></div>
+
+    <button id="GrowBtn" onclick="myFunction()">Grow</button>
+    <button id="BlueBtn" onclick="myFunction()">Blue</button>
+    <button id="FadeBtn" onclick="myFunction()">Fade</button>
+    <button id="ResetBtn" onclick="myFunction()">Reset</button>
+
+    <script>
+        function  myFunction(RestBtn) {
+        document.getElementById("box").style = "background-color:orange; height:150px; width:150px; margin:25px"
+            
+    }
+
+        document.getElementById("BlueBtn").addEventListener("click", function(){
+        document.getElementById("box").style = "background-color:Blue; height:150px; width:150px; margin:25px"
+    }
+);    
+
+        document.getElementById("FadeBtn").addEventListener("click", function(){
+        document.getElementById("box").style = "opacity:0; height:150px; width:150px; margin:25px" 
+    }
+        
+);
+
+		document.getElementById("GrowBtn").addEventListener("click", function(){
+        document.getElementById("box").style= "background-color:orange; height:300px; width:150px; margin:25px"
+    }
+);    
+  
+    </script>
+
+</body>
+</html>
